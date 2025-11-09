@@ -1,7 +1,9 @@
-export default {
+module.exports = {
+  ignorePatterns: ['.eslintrc.js'],
   env: {
     browser: true,
     es6: true,
+    node: true,
     'jest/globals': true,
   },
   extends: ['eslint:recommended', 'plugin:react/recommended'],
@@ -21,8 +23,6 @@ export default {
   rules: {
     indent: ['error', 2],
     'linebreak-style': ['error', 'unix'],
-    quotes: ['error', 'single'],
-    semi: ['error', 'never'],
     eqeqeq: 'error',
     'no-trailing-spaces': 'error',
     'object-curly-spacing': ['error', 'always'],
